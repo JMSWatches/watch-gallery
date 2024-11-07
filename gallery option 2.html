@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<style>
+ /* Swiper Styles */
+ .swiper-container {
+   width: 100%;
+   max-width: 800px;
+   height: 500px;
+   margin: auto;
+ }
+</style>
+
+<div class="swiper-container">
+ <div class="swiper-wrapper">
+<div class="swiper-slide"><img src="white dial datejust1.png" alt="white dial datejust1"></div>
+<div class="swiper-slide"><img src="mother of pearl sub.png" alt="mother of pearl sub"></div>
+   <!-- Add more slides as needed -->
+ </div>
+ <!-- Add Pagination -->
+ <div class="swiper-pagination"></div>
+ <!-- Add Navigation -->
+ <div class="swiper-button-next"></div>
+ <div class="swiper-button-prev"></div>
+</div>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+ var swiper = new Swiper('.swiper-container', {
+   loop: true,
+   pagination: { el: '.swiper-pagination', clickable: true },
+   navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+ });
+</script>
